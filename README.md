@@ -8,4 +8,4 @@
 ## Yêu cầu đầu vào 
 Image resolution: 160 pixel x 120 pixel
 ## Cách chạy
-!python 
+!python /Sleeping-Pose-Detector/inference.py --PATH={image_path}
