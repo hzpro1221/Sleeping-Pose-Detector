@@ -15,7 +15,8 @@ def inference(args):
 
     with torch.no_grad():
         image = io.imread(args.PATH)
-        logits = model.forward(image)
+        input_tensor = torch.tensor(image).unsqueeze(0).to(device)
+        logits = model.forward(input_tensor)
         pred = torch.argmax(logits).item()
     
     return pred
