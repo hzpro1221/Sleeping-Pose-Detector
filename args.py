@@ -6,3 +6,5 @@ def parse_arguments():
         '--PATH',
         type=str,
     )
+    parsed_args = parser.parse_args()
+    return parsed_args
